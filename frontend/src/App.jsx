@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     async function APIcall() {
-      const response = await fetch('http://localhost:3000/api/products');
+      const response = await fetch('https://e-com-full-stack-1.onrender.com/api/products');
       const data = await response.json();
       console.log(data);
       setProducts(data.products || []);
